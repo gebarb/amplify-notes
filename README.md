@@ -1,3 +1,7 @@
+# AWS Amplify Notes Application
+
+### [Tutorial](https://aws.amazon.com/getting-started/hands-on/build-react-app-amplify-graphql/)
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
