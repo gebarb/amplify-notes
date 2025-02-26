@@ -1,10 +1,16 @@
 version: 1
+backend:
+  phases:
+    build:
+      commands:
+        - npm ci --cache .npm --prefer-offline
+        - npx ampx pipeline-deploy --branch main --app-id d2x2udl9memwvp
 frontend:
   phases:
     preBuild:
       commands:
         - npm ci --cache .npm --prefer-offline
-        - npx ampx generate outputs --branch main --app-id d2x2udl9memwvp
+        - npx ampx pipeline-deploy --branch main --app-id d2x2udl9memwvp
     build:
       commands:
         - npm run build
